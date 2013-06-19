@@ -1,5 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
+#This is a test comment for git
+
 require 'rails/all'
 
 if defined?(Bundler)
