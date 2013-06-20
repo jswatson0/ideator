@@ -17,7 +17,7 @@
 
 <p>
   <b>Picture:</b>
-  <%= @student.picture %>
+  <%= image_tag(@student.picture_url, :width => 600) if @student.picture.present? %>
 </p>
 
 
