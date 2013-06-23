@@ -1,10 +1,10 @@
-<h1>Listing ideas</h1>
+<h1>To Do Genie</h1>
 
 <table>
   <tr>
-    <th>Picture</th>
     <th>Name</th>
     <th>Description</th>
+    <th>Picture</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,7 +12,7 @@
 
 <% @ideas.each do |idea| %>
   <tr>
-    <td><%= image_tag(idea.picture_url, :width =>100) if idea.picture.present? %></td>
+    <td><%= image_tag(idea.picture_url, :width =>50) if idea.picture.present? %></td>
     <td><%= idea.name %></td>
     <td><%= idea.description %></td>
     <td><%= link_to 'Show', idea %></td>
